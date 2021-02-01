@@ -13,26 +13,24 @@
                 <h1>Bloggen</h1>
             </div>
             <div class="nav-items">
-                <div class="home">
-                    <a href="index.html">Hem</a>
+                <div class="numberOfPosts">
+                    <button id="add">add</button>
+                    <button id="remove">remove</button>
+                </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="post-text">
+        <div class="post-text">
             <textarea name="posttext" id="post-textarea" cols="30" rows="10"></textarea>
-            <button class="addPostBtn">Post</button>
-        </section>
+            <!--Får inte den här knappen att gå igenom före transition på textarea så man måste trycka på den när transitionen är färdig :/-->
+            <button id="addPostBtn">Post</button>
+        </div>
         <div class="posts">
-            <section>
-                <h4>Titel</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Odio sint voluptate magni sunt sit culpa unde sapiente rem quibusdam reiciendis. 
-                    Aperiam, obcaecati nostrum veritatis facilis eaque nisi temporibus tempora illum.</p>
-            </section>
         </div>
     </main>
+    <footer>Emil Johannesson</footer>
     <script src="main.js"></script>
 </body>
 </html>
